@@ -13,3 +13,4 @@ dist/
 build/
 Thumbs.db
 package-lock.json
+.vscode/
