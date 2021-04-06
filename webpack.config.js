@@ -10,7 +10,6 @@ module.exports = {
 
   output: {
     publicPath: '',
-    // publicPath: '',
     filename: '[name].[fullhash:5].js',
     assetModuleFilename: 'assets/[name][ext]',
     path: path.resolve(__dirname, 'dist'),
@@ -48,10 +47,6 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //   type: "asset/resource",
-      // },
       {
         test: /\.svg$/i,
         type: "asset/resource",
@@ -61,7 +56,6 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
-          // name: "img/[name].[ext]",
           name: '[name].[ext]',
           outputPath: './img',
         },
@@ -84,7 +78,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: 'styles.css' }),
     new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'Test Task',
       template: 'src/index.html',
       favicon: 'src/favicon.ico',
     }),

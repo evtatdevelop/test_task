@@ -6,7 +6,30 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <img src="img/kitty.jpg" alt="html-kity" class="html-kity">
-  <div class="svg-test"></div>
+  <header class="main-header header">
+    <button type="button" class="header__options"><span class="visually-hidden">options</span></button>
+    <div class="header__search search">
+      <form action="" class="search__form">
+        <input type="text" class="search__request" placeholder="Search">
+        <button type="submit" class="search__submit"><span class="visually-hidden">Search</span></button>
+      </form>
+    </div>
+    <nav class="header__navigation">
+      <ul class="navigation">
+        <li class="navigation__account">
+          <a href="" class="account-link"><span>Account</span></a>
+          <ul class="account-nav">
+            <li>Account</li>
+            <li><a href="callus">Call Us</a></li>
+            <li><a href="feedback">Give Feedback</a></li>
+            <li><a href="logout">Log Out</a></li>
+          </ul>
+        </li>
+        <li class="navigation__order"><a href="orders"><span>Orders</span></a></li>
+        <li class="navigation__cart"><a href="cart"><span>Cart</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main-section"></section>
 </body>
 </html>

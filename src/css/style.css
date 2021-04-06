@@ -1,41 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 @font-face {
-  font-family: "MyFont";
-  src: url("../fonts/caveat-regular-latin.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+.visually-hidden {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.nofloat {
+  clear: both;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 body {
-  background-color: #161619;
-  height: 100vh;
-  width: 100%;
+  background-color: #e6e6e6;
+  background-image: url("../img/bg_grey_tile@2x.jpg");
+  background-size: cover;
 }
-.hello {
-  color: orange;
-  font-family: "MyFont";
-  background: url("../img/icon.png");
 
+.main-header {
+  /* outline: 1px solid green; */
+  /* height: 80px; */
   display: flex;
   align-items: center;
-  background-size: 20px;
+  justify-content: space-between;
+  background-color: white;
+}
+.header__options {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin-left: 15px;
+  background-color: white;
+  background-image: url(../img/svg/options-sharp.svg);
+  background-position: center center;
   background-repeat: no-repeat;
-  padding-left: 20px;
-  background-position: left center;
-  font-size: 24px;
+  cursor: pointer;
 }
-.kitty {
-  width: 30px;
-  height: 30px;
+.header__options:focus,
+.header__options:hover {
+  background-image: url(../img/svg/options-sharp-hover.svg);
+}
+.search {
+  width: 525px;
+}
+.search__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.search__request {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #9c9d9d;
+  padding-left: 15px;
+  padding-right: 40px;
+  font-size: 12px;
+}
+.search__submit {
+  position: absolute;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  margin-left: 5px;
+  background-color: #ffa500;
+  background-image: url("../img/svg/Interface-Essential\ -\ Search\ -\ search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 2px;
+  cursor: pointer;
 }
-.html-kity {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 5px;
+.header__navigation {
+  margin-right: 15px;
 }
-.svg-test {
-  width: 79px;
-  height: 75px;
-  background: url("../img/Logo.svg");
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation > li {
+  width: 60px;
+  height: 80px;
+  /* outline: 1px solid red; */
+}
+.navigation > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+  color: #9c9d9d;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+}
+.navigation > li > a:focus,
+.navigation > li > a:hover {
+  color: black;
+}
+.navigation__account {
+  position: relative;
+}
+.navigation__account > a {
+  background-image: url("../img/svg/person-sharp.svg");
+  cursor: pointer;
+}
+.navigation__account > a:focus,
+.navigation__account > a:hover {
+  background-image: url("../img/svg/person-sharp-hover.svg");
+}
+.navigation__order > a {
+  background-image: url("../img/svg/document-text-sharp.svg");
+}
+.navigation__order > a:focus,
+.navigation__order > a:hover {
+  background-image: url("../img/svg/document-text-sharp-hover.svg");
+}
+.navigation__cart > a {
+  background-image: url("../img/svg/cart-sharp.svg");
+}
+.navigation__cart > a:focus,
+.navigation__cart > a:hover {
+  background-image: url("../img/svg/cart-sharp-hover.svg");
+}
+.account-nav {
+  display: none;
+  position: absolute;
+  width: 215px;
+  left: -77.5px;
+}
+.account-nav > li {
+  width: 100%;
+  height: 56px;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  color: white;
+  font-size: 14;
+}
+.account-nav > li:first-child {
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.account-nav > li > a {
+  font: inherit;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.account-nav > li > a:focus,
+.account-nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+.account-nav::before {
+  position: absolute;
+  content: "";
+  border: 8px solid transparent;
+  border-bottom: 9px solid black;
+  left: 50%;
+  margin-left: -8px;
+  top: -17px;
+}
+.navigation__account.opened > .account-nav {
+  display: block;
+}
+
+.main-section {
+  /* outline: 1px solid blue; */
 }
