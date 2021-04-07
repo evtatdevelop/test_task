@@ -14,6 +14,12 @@
 
 /* 375-Mobile */
 @media screen and (max-width: 375px) {
+  .header__options {
+    margin-left: 5px;
+  }
+  .header__navigation {
+    margin-right: 5px;
+  }
   .search__request {
     display: none;
   }
@@ -55,7 +61,12 @@
     left: -83.5px;
   }
   .navigation__cart.full::before {
-    top: 14px;
+    top: 13px;
     left: 30px;
+  }
+
+  .main-section {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
