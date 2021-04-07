@@ -1,7 +1,13 @@
+@media screen and (max-width: 1024px) {
+}
+
 /* 1024-Tablet-Landscape */
 @media screen and (max-width: 1024px) {
   .search {
     width: 400px;
+  }
+  .main-section {
+    max-width: 1002px;
   }
 }
 
@@ -9,6 +15,23 @@
 @media screen and (max-width: 768px) {
   .search {
     width: 284px;
+  }
+  .main-section {
+    max-width: 762px;
+  }
+  .bestsellers li {
+    height: 236px;
+  }
+  .page-name {
+    font-size: 18px;
+    margin-top: 36px;
+  }
+  .section-tools {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+  .section-bestsellers {
+    margin-top: 16px;
   }
 }
 
@@ -68,5 +91,19 @@
   .main-section {
     padding-left: 18px;
     padding-right: 18px;
+  }
+  .page-name {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .separeting-bar {
+    border: 1px solid #cfcfcf;
+    margin-top: 12px;
+  }
+  .section-tools {
+    display: none;
+  }
+  .bestsellers li:first-child {
+    margin-right: 10px;
   }
 }
