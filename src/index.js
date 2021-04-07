@@ -4,6 +4,7 @@ import 'regenerator-runtime/runtime';
 // import _ from 'lodash';
 import './css/normalize.css';
 import './css/style.css';
+import './css/responsive.css';
 
 // import Kitty from './img/kitty.jpg';
 // function component() {
@@ -23,6 +24,9 @@ import './css/style.css';
 // const testNativeJS = document.body.querySelector('.svg-test');
 // testNativeJS.addEventListener('click', () => alert('Teast Native JS'));
 
+/**
+ * Header navigation
+ */
 const navigationAccount = document.querySelector('.navigation__account');
 const accountLink = navigationAccount.querySelector('.account-link');
 const accountNav = navigationAccount.querySelector('.account-nav');

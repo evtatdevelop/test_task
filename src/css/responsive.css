@@ -1,0 +1,61 @@
+/* 1024-Tablet-Landscape */
+@media screen and (max-width: 1024px) {
+  .search {
+    width: 400px;
+  }
+}
+
+/* 768-Tablet-Portrait */
+@media screen and (max-width: 768px) {
+  .search {
+    width: 284px;
+  }
+}
+
+/* 375-Mobile */
+@media screen and (max-width: 375px) {
+  .search__request {
+    display: none;
+  }
+  .navigation > li {
+    width: 48px;
+    height: 56px;
+    /* outline: 1px solid red; */
+  }
+  .search__submit {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    background-size: 15px 15px;
+  }
+  .navigation > li > a > span {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .navigation > li > a {
+    background-position: center center;
+  }
+  .navigation__account > a {
+    background-size: 20px 21px;
+  }
+  .navigation__order > a {
+    background-size: 16px 20px;
+  }
+  .navigation__cart > a {
+    background-size: 24px 21px;
+  }
+  .account-nav {
+    left: -83.5px;
+  }
+  .navigation__cart.full::before {
+    top: 14px;
+    left: 30px;
+  }
+}
