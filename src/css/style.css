@@ -55,7 +55,7 @@ body {
   padding: 0;
   margin-left: 17px;
   background-color: white;
-  background-image: url(../img/svg/options-sharp.svg);
+  background-image: url(../svg/options-sharp.svg);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -63,7 +63,7 @@ body {
 }
 .header__options:focus,
 .header__options:hover {
-  background-image: url(../img/svg/options-sharp-hover.svg);
+  background-image: url(../svg/options-sharp-hover.svg);
 }
 .search {
   width: 525px;
@@ -91,7 +91,7 @@ body {
   height: 36px;
   border-radius: 50%;
   background-color: #ffa500;
-  background-image: url("../img/svg/Interface-Essential\ -\ Search\ -\ search.svg");
+  background-image: url("../svg/Interface-Essential\ -\ Search\ -\ search.svg");
   background-repeat: no-repeat;
   background-position: center center;
   right: 2px;
@@ -129,32 +129,33 @@ body {
   position: relative;
 }
 .navigation__account > a {
-  background-image: url("../img/svg/person-sharp.svg");
+  background-image: url("../svg/person-sharp.svg");
   cursor: pointer;
 }
 .navigation__account > a:focus,
 .navigation__account > a:hover {
-  background-image: url("../img/svg/person-sharp-hover.svg");
+  background-image: url("../svg/person-sharp-hover.svg");
 }
 .navigation__order > a {
-  background-image: url("../img/svg/document-text-sharp.svg");
+  background-image: url("../svg/document-text-sharp.svg");
 }
 .navigation__order > a:focus,
 .navigation__order > a:hover {
-  background-image: url("../img/svg/document-text-sharp-hover.svg");
+  background-image: url("../svg/document-text-sharp-hover.svg");
 }
 .navigation__cart > a {
-  background-image: url("../img/svg/cart-sharp.svg");
+  background-image: url("../svg/cart-sharp.svg");
 }
 .navigation__cart > a:focus,
 .navigation__cart > a:hover {
-  background-image: url("../img/svg/cart-sharp-hover.svg");
+  background-image: url("../svg/cart-sharp-hover.svg");
 }
 .account-nav {
   display: none;
   position: absolute;
   width: 215px;
   left: -77.5px;
+  z-index: 999;
 }
 .account-nav > li {
   width: 100%;
@@ -270,6 +271,7 @@ body {
   width: 49.4%;
   min-width: 288px;
   background-color: white;
+  padding: 18px;
 }
 .bestsellers li:first-child {
   margin-right: 15px;
@@ -288,7 +290,7 @@ body {
   justify-content: center;
   align-items: center;
   top: -12px;
-  z-index: 900;
+  left: 0px;
 }
 .best-premium::before {
   content: "Premium Bestseller";
