@@ -51,6 +51,20 @@
   .btn-load-rusults {
     margin-bottom: 110px;
   }
+  /* bestsellers */
+  .best-item-options {
+    flex-direction: column;
+  }
+  .best-item-stokprice,
+  .best-item-approved {
+    width: 100%;
+  }
+  .best-item-sp {
+    display: inline-flex;
+  }
+  .best-item-sp div {
+    width: 50%;
+  }
 }
 
 /* 768-Tablet-Portrait */

@@ -101,6 +101,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/img', to: 'images' },
+        { from: 'src/svg', to: 'assets' },
       ],
     }),
   ],

@@ -298,6 +298,67 @@ body {
 .best-economy::before {
   content: "Economy Bestseller";
 }
+/* bestsellers inside */
+.best-item-img {
+  outline: 1px solid green;
+  float: left;
+}
+.best-item-info {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.best-item-name {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+  display: inline-block;
+}
+.best-item-options {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.best-item-approved {
+  /* background-image: url("../svg/Logo_OE_Approved_1c_black_final.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 64px;
+  min-height: 52px; */
+  outline: 1px solid peru;
+  /* flex-grow: 1; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.best-item-approved div {
+  outline: 1px solid orangered;
+  margin-left: auto;
+  margin-right: auto;
+}
+.best-item-stokprice {
+  height: 35px;
+  outline: 1px solid olivedrab;
+  /* flex-grow: 1; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.best-item-sp {
+  width: 50%;
+  outline: 1px solid green;
+}
+.best-item-total {
+  width: 50%;
+  outline: 1px solid blue;
+}
+
+.best-item-ordering {
+  outline: 1px solid red;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ITEMS */
 .items {
