@@ -67,9 +67,11 @@
   }
   .best-item-name {
     /* margin-top: 5px; */
-    margin-top: -4px;
+    margin-top: -5px;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.75;
+    min-height: 49px;
+    /* outline: 1px solid green; */
   }
   .best-item-image {
     width: 46%;
@@ -87,13 +89,13 @@
   }
   .best-item-approved img {
     width: 39px;
-    height: auto;
+    height: 32px;
   }
   .best-item-approved div {
     height: 32px;
   }
   .best-item-stokprice {
-    margin-top: 14px;
+    margin-top: 15px;
   }
   .best-item-sp > div {
     display: flex;
@@ -103,22 +105,35 @@
   }
   .best-item-sp > div > div {
     width: 50%;
-    outline: 1px solid blue;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-  .best-item-stok,
-  .best-item-price {
     flex-direction: column;
     height: 32px;
     justify-content: space-between;
+    /* outline: 1px solid green; */
+  }
+  .best-item-stok,
+  .best-item-price {
+    align-items: flex-start;
+  }
+  .best-item-stok > div {
+    margin-left: 9px;
   }
   .best-item-stok p:first-child,
   .best-item-price p:first-child {
-    margin-right: 0;
+    width: auto;
+  }
+  .best-item-price {
+    position: relative;
+  }
+  .best-item-price-val {
+    position: absolute;
+    bottom: -2px;
   }
   .best-item-total > div {
     height: 32px;
+  }
+  .best-item-ordering {
+    margin-left: 18px;
+    margin-top: 22px;
   }
   .items {
     display: flex;
