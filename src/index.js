@@ -5,24 +5,8 @@ import 'regenerator-runtime/runtime';
 import './css/normalize.css';
 import './css/style.css';
 import './css/responsive.css';
-
-// import Kitty from './img/kitty.jpg';
-// function component() {
-//   const element = document.createElement('div');
-
-//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//   element.classList.add('hello');
-
-//   const myKitty = new Image();
-//   myKitty.src = Kitty;
-//   myKitty.classList.add('kitty');
-//   element.appendChild(myKitty);
-
-//   return element;
-// }
-// document.body.appendChild(component());
-// const testNativeJS = document.body.querySelector('.svg-test');
-// testNativeJS.addEventListener('click', () => alert('Teast Native JS'));
+import './css/clicker.css';
+import './css/button.css';
 
 /**
  * Header navigation

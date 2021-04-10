@@ -71,6 +71,8 @@
     font-size: 14px;
     line-height: 1.75;
     min-height: 49px;
+    display: flex;
+    align-items: center;
     /* outline: 1px solid green; */
   }
   .best-item-image {
@@ -149,7 +151,7 @@
   .items li:nth-child(4),
   .items li:nth-child(5),
   .items li:nth-child(6) {
-    /* display: block; */
+    display: block;
   }
   .btn-load-rusults {
     margin-bottom: 110px;

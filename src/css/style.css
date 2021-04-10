@@ -48,6 +48,7 @@ body {
   justify-content: space-between;
   background-color: white;
   width: 100%;
+  overflow-x: hidden;
 }
 .header__options {
   height: 50px;
@@ -221,6 +222,7 @@ body {
   max-width: 1366px;
   padding-left: 30px;
   padding-right: 30px;
+  overflow-x: hidden;
 }
 .page-name {
   font-size: 26px;
@@ -416,7 +418,7 @@ body {
 }
 
 .best-item-ordering {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   height: 40px;
   display: flex;
   justify-content: space-between;
