@@ -4,9 +4,12 @@ import 'regenerator-runtime/runtime';
 // import _ from 'lodash';
 import './css/normalize.css';
 import './css/style.css';
-import './css/responsive.css';
+import './css/header.css';
+import './css/bestseller.css';
 import './css/clicker.css';
 import './css/button.css';
+import './css/item.css';
+import './css/responsive.css';
 
 /**
  * Header navigation

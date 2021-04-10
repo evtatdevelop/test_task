@@ -1,0 +1,161 @@
+/* BESTSELLERS */
+.bestsellers {
+  display: flex;
+  justify-content: space-between;
+}
+.bestsellers li {
+  height: 175px;
+  width: 49.4%;
+  min-width: 288px;
+  background-color: white;
+  padding: 18px;
+}
+.bestsellers li:first-child {
+  margin-right: 15px;
+}
+.bestsellers-item {
+  position: relative;
+}
+.bestsellers-item::before {
+  position: absolute;
+  width: 153px;
+  height: 24px;
+  background-color: #ffa500;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -12px;
+  left: 0px;
+}
+.best-premium::before {
+  content: "Premium Bestseller";
+}
+.best-economy::before {
+  content: "Economy Bestseller";
+}
+/* bestsellers inside */
+.best-item-image {
+  /* outline: 1px solid green; */
+  float: left;
+  width: 31%;
+  height: 139px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best-item-info {
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+.best-item-name {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 1px;
+}
+.best-item-options {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.best-item-approved {
+  /* background-image: url("../svg/Logo_OE_Approved_1c_black_final.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 64px;
+  min-height: 52px; */
+  /* outline: 1px solid peru; */
+  /* flex-grow: 1; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.best-item-approved div {
+  /* outline: 1px solid orangered; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 41px;
+}
+.best-item-stokprice {
+  height: 35px;
+  /* outline: 1px solid olivedrab; */
+  /* flex-grow: 1; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.best-item-sp {
+  width: 50%;
+  /* outline: 1px solid green; */
+  display: flex;
+  /* flex-direction: column;
+  justify-content: space-between;
+  height: 41px; */
+  justify-content: center;
+  align-items: center;
+}
+.best-item-sp > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+  height: 41px;
+  width: 100%;
+}
+.best-item-stock-sight {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #008435;
+}
+.best-item-stok,
+.best-item-price {
+  display: flex;
+  align-items: center;
+}
+.best-item-stok p:first-child,
+.best-item-price p:first-child {
+  display: block;
+  width: 45px;
+  /* margin-right: 10%; */
+}
+.best-item-total {
+  width: 50%;
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+}
+.best-item-total > div {
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 41px;
+}
+.best-item-total-price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.best-item-ordering {
+  /* outline: 1px solid red; */
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
