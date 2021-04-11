@@ -42,8 +42,9 @@
   width: 31%;
   height: 139px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  /* margin-left: 12px; */
 }
 .best-item-info {
   /* outline: 1px solid blue; */
@@ -158,4 +159,25 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+.best-item-image div {
+  width: 123px;
+  height: 123px;
+  flex-shrink: 0;
+  /* outline: 1px solid red; */
+  position: relative;
+  margin-left: 14px;
+}
+.bestsellers-item.winer .best-item-image div::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/MaskGroup14@2x.png");
+  width: 41px;
+  height: 73px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -6px;
+  left: 93px;
 }
