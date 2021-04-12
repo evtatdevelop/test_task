@@ -11,11 +11,6 @@
   }
   .best-item-image {
     width: 29.5%;
-    /* justify-content: left; */
-  }
-  .best-item-img {
-    width: 105px;
-    height: 105px;
   }
   .best-item-name {
     margin-top: 5px;
@@ -34,10 +29,11 @@
     width: 40px;
   }
   .best-item-image div {
-    margin-left: 1px;
+    margin-left: 0px;
     margin-top: 17px;
   }
   .bestsellers-item.winer .best-item-image div::before {
+    background-image: url("../img/Mask-Group-14m.png");
     width: 35px;
     height: 62px;
     top: -1px;
@@ -67,7 +63,6 @@
   }
   .bestsellers li {
     height: 236px;
-    /* padding-right: 1px; */
   }
   .bestsellers-item::before {
     width: 128px;
@@ -76,21 +71,18 @@
     top: -11px;
   }
   .best-item-name {
-    /* margin-top: 5px; */
     margin-top: -5px;
     font-size: 14px;
     line-height: 1.75;
     min-height: 49px;
     display: flex;
     align-items: center;
-    /* outline: 1px solid green; */
   }
   .best-item-image {
     width: 47.2%;
     justify-content: left;
     height: 130px;
     align-items: flex-end;
-    /* outline: 1px solid green; */
   }
   .best-item-options {
     flex-direction: column;
@@ -121,7 +113,6 @@
     flex-direction: column;
     height: 32px;
     justify-content: space-between;
-    /* outline: 1px solid green; */
   }
   .best-item-stok,
   .best-item-price {
@@ -148,23 +139,16 @@
     margin-left: 18px;
     margin-top: 22px;
   }
-
-  .best-item-img {
-    width: 103px;
-    height: 103px;
-    /* outline: 1px solid red; */
-  }
   .best-item-image div {
+    margin-left: 2px;
     width: 103px;
     height: 103px;
-    /* outline: 1px solid blue; */
   }
   .bestsellers-item.winer .best-item-image div::before {
-    background-image: url("../img/MaskGroup14.png");
+    background-image: url("../img/Mask-Group-14s.png");
     width: 28px;
-    height: 52px;
+    height: 55px;
     top: -24px;
-    /* left: 76px; */
   }
 
   .items {
@@ -193,22 +177,7 @@
   .main-section {
     max-width: 762px;
   }
-  /* .bestsellers li {
-    height: 236px;
-  } */
-  /* .page-name {
-    font-size: 18px;
-    margin-top: 36px;
-  } */
-  /* .section-tools {
-    margin-top: 22px;
-    font-size: 12px;
-  } */
-  /* .bestsellers-item::before {
-    width: 128px;
-    height: 23px;
-    font-size: 11px;
-  } */
+
   .bestsellers-item.winer .best-item-image div::before {
     left: 79px;
   }
@@ -240,7 +209,6 @@
   .navigation > li {
     width: 48px;
     height: 56px;
-    /* outline: 1px solid red; */
   }
   .search__submit {
     width: 26px;

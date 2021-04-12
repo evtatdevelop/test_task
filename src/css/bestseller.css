@@ -37,17 +37,14 @@
 }
 /* bestsellers inside */
 .best-item-image {
-  /* outline: 1px solid green; */
   float: left;
   width: 31%;
   height: 139px;
   display: flex;
   justify-content: left;
   align-items: center;
-  /* margin-left: 12px; */
 }
 .best-item-info {
-  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
 }
@@ -61,25 +58,16 @@
 }
 .best-item-options {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin-top: 10px;
   font-size: 14px;
 }
 .best-item-approved {
-  /* background-image: url("../svg/Logo_OE_Approved_1c_black_final.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 64px;
-  min-height: 52px; */
-  /* outline: 1px solid peru; */
-  /* flex-grow: 1; */
   width: 50%;
   display: flex;
   align-items: center;
 }
 .best-item-approved div {
-  /* outline: 1px solid orangered; */
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -89,8 +77,6 @@
 }
 .best-item-stokprice {
   height: 35px;
-  /* outline: 1px solid olivedrab; */
-  /* flex-grow: 1; */
   width: 50%;
   display: flex;
   align-items: center;
@@ -98,11 +84,7 @@
 }
 .best-item-sp {
   width: 50%;
-  /* outline: 1px solid green; */
   display: flex;
-  /* flex-direction: column;
-  justify-content: space-between;
-  height: 41px; */
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +92,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* outline: 1px solid red; */
   height: 41px;
   width: 100%;
 }
@@ -129,11 +110,9 @@
 .best-item-price p:first-child {
   display: block;
   width: 45px;
-  /* margin-right: 10%; */
 }
 .best-item-total {
   width: 50%;
-  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,7 +121,6 @@
   align-items: center;
 }
 .best-item-total > div {
-  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -154,7 +132,6 @@
 }
 
 .best-item-ordering {
-  /* outline: 1px solid red; */
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -162,17 +139,16 @@
 }
 
 .best-item-image div {
-  width: 123px;
-  height: 123px;
   flex-shrink: 0;
-  /* outline: 1px solid red; */
   position: relative;
-  margin-left: 14px;
+  margin-left: 11px;
+  margin-top: 10px;
+  margin-top: 19px;
 }
 .bestsellers-item.winer .best-item-image div::before {
   position: absolute;
   content: "";
-  background-image: url("../img/MaskGroup14@2x.png");
+  background-image: url("../img/Mask-Group-14.png");
   width: 41px;
   height: 73px;
   background-position: center;

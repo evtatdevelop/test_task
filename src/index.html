@@ -44,8 +44,13 @@
           <form action="">
             <div class="best-item-image">
               <div>
-                <img class="best-item-img" src="images/Path4@2x.png" width='123' height="123" alt="">
+                <!-- <img class="best-item-img" src="images/Path4@2x.png" width='123' height="123" alt=""> -->
                 <!-- <img class="best-item-img" src="images/Path4.png" width='123' height="123" alt=""> -->
+                ​<picture>
+                  <source media="(max-width:1000px)" srcset="images/Path-4s.jpg">
+                  <source media="(max-width:1200px)" srcset="images/Path-4m.jpg">
+                  <img class="best-item-img" src="images/Path-4.jpg" alt="">
+                 </picture>
               </div>
             </div>
             
