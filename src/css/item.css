@@ -19,17 +19,21 @@
 .items-item-name {
   width: 14.8%;
   height: 43px;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
   flex-shrink: 0;
 }
 .items-item-name h3 {
   max-width: 135px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: underline;
 }
 
 .items-item-approved-sign {
   max-width: 119px;
   flex-grow: 1;
-  /* outline: 1px solid blue; */
+  outline: 1px solid blue;
 }
 .items-item-approved-sign > div {
   width: 64px;
@@ -42,19 +46,23 @@
 }
 
 .items-item-approved-info {
-  /* outline: 1px solid blue; */
+  outline: 1px solid blue;
   max-width: 163px;
   flex-grow: 1;
+  font-size: 14px;
 }
 .items-item-approved-info > div {
   width: 104px;
   height: 40px;
   /* outline: 1px solid green; */
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .items-item-stock {
-  /* outline: 1px solid blue; */
+  outline: 1px solid blue;
   max-width: 130px;
   flex-grow: 1;
 }
@@ -63,11 +71,41 @@
   height: 40px;
   /* outline: 1px solid green; */
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+.items-stok-main {
+  display: flex;
+  font-size: 14px;
+}
+.items-stok-info {
+  font-size: 12px;
+  font-weight: 700;
+}
+.items-item-stock-sight {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 9px;
+}
+.items-item.instok .items-item-stock-sight {
+  background-color: #008435;
+  background-image: url(../svg/Interface-Essential\ -\ Form-Validation\ -\ check-circle-1.svg);
+}
+.items-item.little .items-item-stock-sight {
+  background-color: #ffa500;
+  background-image: url(../svg/yellow.svg);
+}
+.items-item.out-of-stock .items-item-stock-sight {
+  background-color: #8e1216;
+  background-image: url(../svg/red.svg);
 }
 
 .items-item-price {
-  /* outline: 1px solid blue; */
-  max-width: 135px;
+  outline: 1px solid blue;
+  max-width: 138px;
   flex-grow: 1;
 }
 .items-item-price > div {
@@ -75,16 +113,21 @@
   height: 19px;
   /* outline: 1px solid green; */
   flex-shrink: 0;
+  display: flex;
+}
+.items-item-price-val {
+  margin-left: 9px;
 }
 
 .items-item-clicker {
-  /* outline: 1px solid blue; */
-  max-width: 194px;
+  outline: 1px solid blue;
+  max-width: 191px;
   flex-grow: 1;
 }
 
 .items-item-total {
-  /* outline: 1px solid blue; */
+  outline: 1px solid blue;
+  max-width: 185px;
   flex-grow: 1;
 }
 .items-item-total > div {
@@ -92,7 +135,15 @@
   height: 24px;
   /* outline: 1px solid green; */
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
+.items-item-total-price {
+  margin-left: 9px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .items-item-button {
   /* outline: 1px solid blue; */
   /* flex-grow: 1; */
