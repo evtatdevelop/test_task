@@ -225,7 +225,65 @@
     min-width: 300px;
     height: 158px;
   }
-
+  .items-item form {
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .items-item-name {
+    width: 50%;
+    max-width: auto;
+    min-width: auto;
+    order: 1;
+  }
+  .items-item-approved-sign {
+    width: 25%;
+    max-width: auto;
+    min-width: auto;
+    order: 3;
+  }
+  .items-item-approved-sign > div {
+    width: 44px;
+    height: 36px;
+    background-size: cover;
+  }
+  .items-item-approved-info {
+    width: 50%;
+    max-width: auto;
+    min-width: auto;
+    order: 2;
+  }
+  .items-item-stock {
+    width: 25%;
+    max-width: auto;
+    min-width: auto;
+    order: 4;
+  }
+  .items-item.instok .items-stok-main {
+    flex-direction: column;
+  }
+  .items-item-price {
+    width: 25%;
+    max-width: auto;
+    min-width: auto;
+    order: 5;
+  }
+  .items-item-price > div {
+    flex-direction: column;
+  }
+  .items-item-clicker {
+    max-width: auto;
+    min-width: auto;
+    order: 7;
+  }
+  .items-item-total {
+    width: 25%;
+    max-width: auto;
+    min-width: auto;
+    order: 6;
+  }
+  .items-item-button {
+    order: 8;
+  }
   .items-item .button-order {
     width: 135px;
     /* margin-right: 8px; */
