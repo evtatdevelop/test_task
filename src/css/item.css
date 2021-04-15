@@ -19,7 +19,7 @@
 .items-item-name {
   width: 14.8%;
   height: 43px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   flex-shrink: 0;
 }
 .items-item-name h3 {
@@ -33,7 +33,7 @@
 .items-item-approved-sign {
   max-width: 119px;
   flex-grow: 1;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 .items-item-approved-sign > div {
   width: 64px;
@@ -46,7 +46,7 @@
 }
 
 .items-item-approved-info {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   max-width: 163px;
   flex-grow: 1;
   font-size: 14px;
@@ -62,7 +62,7 @@
 }
 
 .items-item-stock {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   max-width: 130px;
   flex-grow: 1;
 }
@@ -104,7 +104,7 @@
 }
 
 .items-item-price {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   max-width: 138px;
   flex-grow: 1;
 }
@@ -120,13 +120,13 @@
 }
 
 .items-item-clicker {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   max-width: 191px;
   flex-grow: 1;
 }
 
 .items-item-total {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   max-width: 185px;
   flex-grow: 1;
 }
