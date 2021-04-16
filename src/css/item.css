@@ -24,7 +24,7 @@
 }
 .items-item-name h3 {
   max-width: 135px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 22px;
   text-decoration: underline;
@@ -67,6 +67,7 @@
   flex-grow: 1;
 }
 .items-item-stock > div {
+  position: relative;
   width: 90px;
   height: 40px;
   /* outline: 1px solid green; */
@@ -102,6 +103,25 @@
   background-color: #8e1216;
   background-image: url(../svg/red.svg);
 }
+.items-item.little .items-item-stock > div,
+.items-item.out-of-stock .items-item-stock > div {
+  justify-content: start;
+}
+.items-item.out-of-stock .items-item-stock > div::after {
+  position: absolute;
+  content: "Back in 1 week!";
+  font-size: 12px;
+  font-weight: 700;
+  color: #8e1216;
+  top: 28px;
+}
+.items-item.little .items-item-stock > div::after {
+  position: absolute;
+  content: "8 Tires Left";
+  font-size: 12px;
+  font-weight: 700;
+  top: 28px;
+}
 
 .items-item-price {
   /* outline: 1px solid blue; */
@@ -130,7 +150,8 @@
   max-width: 185px;
   flex-grow: 1;
 }
-.items-item-total > div {
+/* .items-item-total > div { */
+.items-item-total-main {
   width: 101px;
   height: 24px;
   /* outline: 1px solid green; */
@@ -143,7 +164,11 @@
   font-size: 18px;
   font-weight: 700;
 }
-
+.items-item-total-save {
+  display: none;
+  font-size: 12px;
+  color: #8e1216;
+}
 .items-item-button {
   /* outline: 1px solid blue; */
   /* flex-grow: 1; */

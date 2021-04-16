@@ -224,19 +224,22 @@
     width: 48.9%;
     min-width: 300px;
     height: 158px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .items-item form {
     justify-content: left;
     flex-wrap: wrap;
   }
   .items-item-name {
-    width: 50%;
-    max-width: auto;
+    width: 52%;
+    /* max-width: auto; */
     min-width: auto;
     order: 1;
   }
   .items-item-approved-sign {
-    width: 25%;
+    width: 12%;
     max-width: auto;
     min-width: auto;
     order: 3;
@@ -247,28 +250,57 @@
     background-size: cover;
   }
   .items-item-approved-info {
-    width: 50%;
-    max-width: auto;
+    width: 48%;
+    /* max-width: auto; */
     min-width: auto;
     order: 2;
+    font-size: 12px;
+    margin-top: -4px;
+  }
+  .items-item-approved-info > div {
+    height: 34px;
   }
   .items-item-stock {
-    width: 25%;
+    width: 18%;
     max-width: auto;
     min-width: auto;
     order: 4;
   }
   .items-item.instok .items-stok-main {
     flex-direction: column;
+    font-size: 12px;
+    justify-content: space-between;
+    height: 34px;
+    margin-top: -9px;
   }
+  .items-item.out-of-stock .items-stok-main {
+    font-size: 12px;
+  }
+  .items-item.little .items-stok-main {
+    font-size: 12px;
+  }
+  .items-item.out-of-stock .items-item-stock > div::after,
+  .items-item.little .items-item-stock > div::after {
+    top: 18px;
+  }
+
   .items-item-price {
-    width: 25%;
+    width: 16%;
     max-width: auto;
     min-width: auto;
     order: 5;
+    font-size: 12px;
+    /* outline: 1px solid blue; */
   }
   .items-item-price > div {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    margin-top: -9px;
+  }
+  .items-item-price-val {
+    margin-left: 0;
   }
   .items-item-clicker {
     max-width: auto;
@@ -280,9 +312,24 @@
     max-width: auto;
     min-width: auto;
     order: 6;
+    font-size: 12px;
+    justify-content: space-between;
+    height: 32px;
+    margin-top: -21px;
+  }
+  .items-item-total-main {
+    height: 25px;
+  }
+  .items-item-total-price {
+    font-size: 18px;
+  }
+  .items-item-total-save {
+    display: block;
   }
   .items-item-button {
     order: 8;
+    margin-right: 8px;
+    margin-left: auto;
   }
   .items-item .button-order {
     width: 135px;
