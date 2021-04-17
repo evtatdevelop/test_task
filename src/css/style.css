@@ -61,6 +61,7 @@ body {
   height: 32px;
   font-size: 14px;
 }
+/* filter */
 .selected-filters {
   display: flex;
   align-items: center;
@@ -89,7 +90,36 @@ body {
   background-size: cover;
   position: absolute;
   right: 8px;
+  cursor: pointer;
 }
+/* sorting */
+.sort {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.sort-button {
+  width: 115px;
+  height: 32px;
+  border-radius: 16px;
+  /* border: 1px solid #e0e0e0; */
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: transparent;
+}
+.sort-select {
+  position: relative;
+  outline: 1px solid blue;
+}
+.sort-list {
+  position: absolute;
+  outline: 1px solid green;
+  z-index: 999;
+  background: white;
+}
+
 .separeting-bar {
   border: 1px solid #cfcfcf;
   margin-top: 8px;
