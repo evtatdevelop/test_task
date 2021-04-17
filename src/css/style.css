@@ -61,6 +61,35 @@ body {
   height: 32px;
   font-size: 14px;
 }
+.selected-filters {
+  display: flex;
+  align-items: center;
+}
+.filters-list {
+  display: flex;
+}
+.filters-list > li {
+  width: 131px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-left: 10px;
+  position: relative;
+}
+.filters-list > li::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../svg/filter-closer.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 8px;
+}
 .separeting-bar {
   border: 1px solid #cfcfcf;
   margin-top: 8px;
