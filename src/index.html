@@ -43,14 +43,17 @@
         Sort by:
         <div class="sort-select">
           <button type="button" class="sort-button">Popularity</button>
-          <ul class="sort-list">
-            <li>Popularity</li>
-            <li><input class="visually-hidden" name="sort" type="radio" value="Lowest Price" id="lowestprice"><label for="lowestprice">Lowest Price</label></li>
-            <li><input class="visually-hidden" name="sort" type="radio" value="Most Stock" id="moststock"><label for="moststock">Most Stock</label></li>
-            <li><input class="visually-hidden" name="sort" type="radio" value="Model A - Z" id="modelaz"><label for="modelaz">Model A - Z</label></li>
-            <li><input class="visually-hidden" name="sort" type="radio" value="Code No." id="codeno"><label for="codeno">Code No.</label></li>
+          <div class="sort-list-box sort-list-closed">
+             <ul class="sort-list">
+              <li>Popularity</li>
+              <li class="sort-item-selected"><input class="visually-hidden" name="sort" type="radio" value="Popularity" id="popularity"><label for="popularity">Popularity</label></li>
+              <li><input class="visually-hidden" name="sort" type="radio" value="Lowest Price" id="lowestprice"><label for="lowestprice">Lowest Price</label></li>
+              <li><input class="visually-hidden" name="sort" type="radio" value="Most Stock" id="moststock"><label for="moststock">Most Stock</label></li>
+              <li><input class="visually-hidden" name="sort" type="radio" value="Model A - Z" id="modelaz"><label for="modelaz">Model A - Z</label></li>
+              <li><input class="visually-hidden" name="sort" type="radio" value="Code No." id="codeno"><label for="codeno">Code No.</label></li>
+            </ul>           
+          </div>
 
-          </ul>
         </div>
         
       </div>
