@@ -65,6 +65,7 @@ sortList.addEventListener('click', (e) => {
  * Clicker
  */
 const clickers = document.querySelectorAll('.clicker');
+
 function inc(form) {
   const clickerInput = form.querySelector('.clicker-input');
   const priceValue = +form.querySelector('.price').textContent;
