@@ -117,9 +117,9 @@
 .sort-list > li:last-child {
   margin-bottom: 8px;
 }
-/* .sort-list input:focus + label {
-  font-weight: 700;
-} */
+.sort-list input:hover + label {
+  font-weight: 600;
+}
 
 .sort-item-selected {
   display: none;

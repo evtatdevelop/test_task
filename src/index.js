@@ -60,3 +60,39 @@ sortList.addEventListener('click', (e) => {
 
   sortListBox.classList.add('sort-list-closed');
 })
+
+/**
+ * Clicker
+ */
+const clickers = document.querySelectorAll('.clicker');
+function inc(form) {
+  const clickerInput = form.querySelector('.clicker-input');
+  const priceValue = +form.querySelector('.price').textContent;
+  const  total = form.querySelector('.total');
+  clickerInput.value++;
+  const totalValue = priceValue * clickerInput.value;
+  total.textContent = totalValue;
+}
+
+function dec(form) {
+  const clickerInput = form.querySelector('.clicker-input');
+  clickerInput.value--;
+  if (clickerInput.value < 1 ) {
+    clickerInput.value = 1;
+    return;
+  }   
+  const priceValue = +form.querySelector('.price').textContent;
+  const  total = form.querySelector('.total');
+  const totalValue = priceValue * clickerInput.value;
+  total.textContent = totalValue;
+}
+
+function handelClick(e) {
+  const target = e.target;
+  let elem = target;
+  while(elem.tagName !== 'FORM') elem = elem.parentElement;
+  if (target.classList.contains('btn-dec')) dec(elem); 
+  if (target.classList.contains('btn-inc')) inc(elem);
+}
+
+clickers.forEach(clicker => clicker.addEventListener('click', (e) => handelClick(e)));
